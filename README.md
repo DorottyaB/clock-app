@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DorottyaB/clock-app)
-- Live Site URL: [on Vercel](https://pomodoro-app-self-nine.vercel.app/)
+- Live Site URL: [on Vercel](https://clock-app-lyart.vercel.app/)
 
 ## Author
 
