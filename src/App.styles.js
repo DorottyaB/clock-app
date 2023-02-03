@@ -25,7 +25,7 @@ export const Overlay = styled.div`
   flex-direction: column;
 
   @media (max-width: 700px) {
-    min-height: ${props => (props.isShowing ? '75vh' : '100vh')};
+    min-height: ${props => (props.isShowing ? '65vh' : '100vh')};
   }
 `;
 
