@@ -10,7 +10,7 @@ export const Quote = () => {
 
   const getQuote = () => {
     axios
-      .get('https://api.quotable.io/random?tags=famous-quotes&maxLength=150')
+      .get('https://api.quotable.io/random?tags=famous-quotes&maxLength=145')
       .then(response => {
         setQuote(prevValue => {
           return {
@@ -37,7 +37,9 @@ export const Quote = () => {
   }, []);
 
   return (
-    <div style={{ fontSize: '15px', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.35)' }}>
+    <div
+      style={{ fontSize: '15px', color: '#e6e6e6', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.35)' }}
+    >
       <QuoteContainer>
         {quote.content && <q>{quote.content}</q>}
         <RefreshButton aria-label='Get new quote' onClick={getQuote} title='Refresh'>
