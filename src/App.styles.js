@@ -18,7 +18,7 @@ export const AppContainer = styled.div`
 export const Overlay = styled.div`
   width: 100%;
   min-height: ${props => (props.isShowing ? '50vh' : '100vh')};
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.35);
   padding: 0 7vw;
   display: flex;
   justify-content: space-around;

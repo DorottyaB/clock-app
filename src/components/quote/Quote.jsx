@@ -37,22 +37,22 @@ export const Quote = () => {
   }, []);
 
   return (
-    <div style={{ fontSize: '15px', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.15)' }}>
+    <div style={{ fontSize: '15px', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.35)' }}>
       <QuoteContainer>
         {quote.content && <q>{quote.content}</q>}
-        <RefreshButton aria-label='Get new quote' onClick={getQuote}>
+        <RefreshButton aria-label='Get new quote' onClick={getQuote} title='Refresh'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='18'
             height='18'
-            fill='#d1d1d1'
+            fill='#e6e6e6'
             viewBox='0 0 256 256'
           >
             <rect width='256' height='256' fill='none'></rect>
             <polyline
               points='176.2 99.7 224.2 99.7 224.2 51.7'
               fill='none'
-              stroke='#d1d1d1'
+              stroke='#e6e6e6'
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='24'
@@ -60,7 +60,7 @@ export const Quote = () => {
             <path
               d='M65.8,65.8a87.9,87.9,0,0,1,124.4,0l34,33.9'
               fill='none'
-              stroke='#d1d1d1'
+              stroke='#e6e6e6'
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='24'
@@ -68,7 +68,7 @@ export const Quote = () => {
             <polyline
               points='79.8 156.3 31.8 156.3 31.8 204.3'
               fill='none'
-              stroke='#d1d1d1'
+              stroke='#e6e6e6'
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='24'
@@ -76,7 +76,7 @@ export const Quote = () => {
             <path
               d='M190.2,190.2a87.9,87.9,0,0,1-124.4,0l-34-33.9'
               fill='none'
-              stroke='#d1d1d1'
+              stroke='#e6e6e6'
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='24'

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const QuoteContainer = styled.div`
   display: flex;
   gap: 15px;
-  max-width: 480px;
+  max-width: 430px;
   margin-bottom: 12px;
 `;
 
