@@ -25,7 +25,7 @@ export const Clock = () => {
               {width > 700 && ", it's currently"}
             </p>
           </FlexContainer>
-          <Time>{currentTime}</Time>
+          <Time>{currentTime.slice(0, 5)}</Time>
           <Timezone>{data.timezoneName}</Timezone>
           <Location>
             In {data.city}, {data.country}

@@ -49,12 +49,6 @@ const TimeContextProvider = ({ children }) => {
 
   useEffect(() => {
     fetchData();
-    // Fetch data every hour to update text and background image (day/night)
-    // const updateInterval = setInterval(() => {
-    //   fetchData();
-    // }, 3600000);
-
-    // return () => clearInterval(updateInterval);
   }, []);
 
   useEffect(() => {
@@ -64,10 +58,19 @@ const TimeContextProvider = ({ children }) => {
         interval = setInterval(() => {
           const date = new Date(Date.now()).toLocaleTimeString([], {
             timeZone: data.timezone,
-            hour: '2-digit',
-            minute: '2-digit',
+            // hour: '2-digit',
+            // minute: '2-digit',
           });
           setCurrentTime(date);
+          if (
+            date === '12:00:00' ||
+            date === '18:00:00' ||
+            date === '00:00:00' ||
+            date === '06:00:00'
+          ) {
+            setIsFetching(true);
+            fetchData();
+          }
         }, 1000);
       }, timeOffset);
     }
