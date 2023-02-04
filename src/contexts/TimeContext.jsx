@@ -39,7 +39,7 @@ const TimeContextProvider = ({ children }) => {
           };
         });
         const time = response.data.data.datetime.time;
-        setCurrentTime(time.slice(0, 5));
+        setCurrentTime(time[0] === '0' ? time.slice(1) : time);
         setIsFetching(false);
       })
       .catch(function (error) {
@@ -65,8 +65,8 @@ const TimeContextProvider = ({ children }) => {
           if (
             date === '12:00:00' ||
             date === '18:00:00' ||
-            date === '00:00:00' ||
-            date === '06:00:00'
+            date === '0:00:00' ||
+            date === '6:00:00'
           ) {
             setIsFetching(true);
             fetchData();
