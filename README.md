@@ -15,6 +15,7 @@ Users should be able to:
 
 - React (Hooks, Context API)
 - Axios
+- [Timezone API](https://timezoneapi.io)
 - Styled components
 
 ### Screenshot
